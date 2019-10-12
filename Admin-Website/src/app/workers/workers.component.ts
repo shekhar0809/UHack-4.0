@@ -4,25 +4,25 @@ import { Router } from '@angular/router';
 
 
 export interface Worker {
-  userId: number;
+  userId: string;
   name: string;
   weight: number;
-  creditScore: number;
+  locality: number;
 }
 
 // fetch user data from firebase
 
 const ELEMENT_DATA: Worker[] = [
-  { userId: 1, name: 'firstName', weight: 1.0079, creditScore: 100 },
-  { userId: 2, name: 'firstName', weight: 4.0026, creditScore: 500 },
-  { userId: 3, name: 'firstName', weight: 6.941, creditScore: 250 },
-  { userId: 4, name: 'firstName', weight: 9.0122, creditScore: 30 },
-  { userId: 5, name: 'firstName', weight: 10.811, creditScore: 4 },
-  { userId: 6, name: 'firstName', weight: 12.0107, creditScore: 970 },
-  { userId: 7, name: 'firstName', weight: 14.0067, creditScore: 100 },
-  { userId: 8, name: 'firstName', weight: 15.9994, creditScore: 70 },
-  { userId: 9, name: 'firstName', weight: 18.9984, creditScore: 460 },
-  { userId: 10, name: 'firstName', weight: 20.1797, creditScore: 0 },
+  { userId: 'shamu001', name: 'Shamu', weight: 150.0079, locality: 110086 },
+  { userId: 'ramu002', name: 'Ramu', weight: 41.0026, locality: 110086 },
+  { userId: 'golu003', name: 'Golu', weight: 86.941, locality: 110006 },
+  { userId: 'rajat004', name: 'Rajat', weight: 59.0122, locality: 110009 },
+  { userId: 'pankaj005', name: 'Pankaj', weight: 10.811, locality: 110085 },
+  { userId: 'shubham006', name: 'Shubham', weight: 121.0107, locality: 110007 },
+  { userId: 'alok007', name: 'Alok', weight: 74.0067, locality: 110085 },
+  { userId: 'shubhanshu008', name: 'Shubhanshu', weight: 15.9994, locality: 110011 },
+  { userId: 'raju009', name: 'Raju', weight: 18.9984, locality: 110005 },
+  { userId: 'gaurav010', name: 'Gaurav', weight: 100.1797, locality: 110005 },
 ];
 
 
@@ -33,7 +33,7 @@ const ELEMENT_DATA: Worker[] = [
 })
 export class WorkersComponent implements OnInit {
 
-  displayedColumns: string[] = ['userId', 'name', 'weight', 'creditScore' , 'link'];
+  displayedColumns: string[] = ['userId', 'name', 'weight', 'locality' , 'link'];
   dataSource = ELEMENT_DATA;
 
   constructor(

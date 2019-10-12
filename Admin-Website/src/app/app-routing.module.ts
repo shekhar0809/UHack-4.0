@@ -5,6 +5,7 @@ import { WorkersComponent } from './workers/workers.component';
 import { UsersComponent } from './users/users.component';
 import { StatsComponent } from './stats/stats.component';
 import { WorkerProfileComponent } from './worker-profile/worker-profile.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 
 const routes: Routes = [
@@ -18,10 +19,15 @@ const routes: Routes = [
   },
   {
     path: 'workers/:id',
-    component: WorkerProfileComponent },
+    component: WorkerProfileComponent
+  },
   {
     path: 'users',
     component: UsersComponent
+  },
+  {
+    path: 'users/:id',
+    component: UserProfileComponent
   },
   {
     path: 'stats',
