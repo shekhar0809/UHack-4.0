@@ -1,0 +1,16 @@
+<mat-card *ngFor="let transaction of transactions " >
+    <mat-card-header >
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Transaction</mat-card-title>
+        <mat-card-subtitle>{{ transaction.transactionId }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <div class="container">
+        senderId: {{ transaction.senderId }} <br> recieverId: {{ transaction.recieverId }} <br> amount : amount
+    </div>
+    
+    <mat-card-actions>
+        <button mat-raised-button>DETAILS</button>
+        <button mat-raised-button>SHARE</button>
+    </mat-card-actions>
+</mat-card>

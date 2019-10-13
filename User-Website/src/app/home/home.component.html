@@ -1,0 +1,69 @@
+<div class="wrapper">
+    <div class="left-container">
+
+        <mat-card class="example-card">
+            <img mat-card-image src="http://andersonanesthesia.com/wp-content/uploads/2017/05/miller.png"
+                alt="Profile Photo">
+            <mat-card-content>
+                <p>
+                    bio goes here
+                </p>
+            </mat-card-content>
+        </mat-card>
+
+    </div>
+
+    <div class="right-container">
+
+        <div class="sub-container-1">
+            <mat-card>
+                <mat-card-header>
+                    <!-- <div mat-card-avatar></div> -->
+                    <mat-card-title> Dashboard </mat-card-title>
+                    <mat-card-subtitle>Welcome to Scrappy</mat-card-subtitle>
+
+                    <button class="btn-logout" color="warn" mat-raised-button>Log out</button>
+
+                </mat-card-header>
+            </mat-card>
+        </div>
+
+        <div class="sub-container-2">
+            <span class="email">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title> Email </mat-card-title>
+                    </mat-card-header>
+
+                </mat-card>
+            </span>
+
+
+            <span class="pass">
+                <mat-card>
+                    <button mat-button>Change Password</button>
+                </mat-card>
+            </span>
+
+        </div>
+
+        <div class="sub-container-3" fxLayout="row" >
+            <mat-card style="max-width: 200px;">
+                <a routerLink="stats">
+                    <button mat-button>My Stats</button>
+
+                </a>
+            </mat-card>
+
+            <mat-card style="max-width: 200px;">
+                <a routerLink="transaction">
+                    <button mat-button>My Transactions</button>
+            
+                </a>
+            </mat-card>
+        </div>
+
+    </div>
+
+
+</div>
