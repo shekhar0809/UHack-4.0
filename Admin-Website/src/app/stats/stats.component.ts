@@ -59,7 +59,7 @@ export class StatsComponent implements OnInit {
       },
       data: [{
         type: 'scatter',
-        toolTipContent: '<b>Area: </b>{x} sq.ft<br/><b>Price: </b>${y}k',
+        toolTipContent: '<b>Week: </b>{x}<br/><b>Workers: </b>{y}',
         dataPoints: [
           { x: 1, y: 10 },
           { x: 2, y: 20 },
